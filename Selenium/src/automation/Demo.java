@@ -28,9 +28,10 @@ public class Demo {
 		WebDriver driver=new ChromeDriver();
 		
 		
-		driver.get("https://www.google.com");
-		driver.manage().window().maximize();
-		driver.quit();
+		driver.get("https://www.google.com"); //It opens browser in chrome browser
+		driver.manage().window().maximize(); //It maximizes the browser
+		System.out.println(driver.getTitle()); //It grabs the page title
+		driver.quit(); //It closes the browser
 	}
 
 }
