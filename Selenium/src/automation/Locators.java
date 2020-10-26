@@ -14,10 +14,16 @@ public class Locators {
 		
 		driver.get("https://www.facebook.com");
 		driver.manage().window().maximize();
-		driver.findElement(By.id("email")).sendKeys("Selenium");
+	//	driver.findElement(By.id("email")).sendKeys("Selenium");
+		//driver.findElement(By.name("pass")).sendKeys("12345");
+	//	driver.findElement(By.className("inputtext._55r1._6luy")).sendKeys("Hello");
+	//	driver.findElement(By.cssSelector(".inputtext._55r1._6luy")).sendKeys("Hello");
+	//	driver.findElement(By.linkText("Forgotten password?")).click();
 		
 		
-		
+		//driver.findElement(By.cssSelector("#email")).sendKeys("Hello");
+		driver.findElement(By.cssSelector(".inputtext._55r1._6luy")).sendKeys("Hello");
+		driver.findElement(By.xpath("//*[@id='pass']")).sendKeys("password");
 	}
 
 }
