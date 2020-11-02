@@ -1,5 +1,6 @@
 package automation;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -12,6 +13,22 @@ public class Customizedxpath {
 		
 		driver.get("https://login.salesforce.com/?locale=in");
 		driver.manage().window().maximize();
+		
+		//Xpath's syntax //tagname[@attribute='value']
+		/*driver.findElement(By.xpath("//*[@id='username']")).sendKeys("salesforce");
+		driver.findElement(By.xpath("//*[@type='password']")).sendKeys("password");
+		driver.findElement(By.xpath("//*[@value='Log In']")).click();
+		*/
+		
+		//CSS syntax tagname[attribute='value']
+		driver.findElement(By.cssSelector("input[name='username']")).sendKeys("salesforce");
+		driver.findElement(By.cssSelector("[type='password']")).sendKeys("password");
+		//driver.findElement(By.cssSelector("input[value='Log In']")).click();
+		//driver.findElement(By.cssSelector("input#Login")).click();
+		driver.findElement(By.cssSelector("#Login")).click();
+		//driver.close();
+		
+		
 	}
 
 }

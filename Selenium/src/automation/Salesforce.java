@@ -14,7 +14,8 @@ public class Salesforce {
 		driver.get("https://login.salesforce.com/?locale=in");
 		driver.manage().window().maximize();
 		
-		//driver.findElement(By.className("input r4 wide mb16 mt8 username")).sendKeys("Hello");
+		//driver.findElement(By.className("input r4 wide mb16 mt8 username")).sendKeys("Hello");   //compound classes are not permitted
+		
 		
 		driver.findElement(By.id("username")).sendKeys("salesforce");
 		driver.findElement(By.name("pw")).sendKeys("salesforcepassword");
