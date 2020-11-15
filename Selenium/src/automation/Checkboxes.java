@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.*;
 
 public class Checkboxes {
 
@@ -20,9 +21,15 @@ public class Checkboxes {
 		//To check the no. of checkboxes in thepage.
 		List<WebElement> boxes=driver.findElements(By.xpath("//input[@type='checkbox']"));
 		System.out.println(boxes.size());
-		System.out.println(driver.findElement(By.xpath("//input[contains(@name,'friendsandfamily')]")).isSelected());
+		//System.out.println(driver.findElement(By.xpath("//input[contains(@name,'friendsandfamily')]")).isSelected());
+		Assert.assertFalse(driver.findElement(By.xpath("//input[contains(@name,'friendsandfamily')]")).isSelected());
 		driver.findElement(By.xpath("//input[contains(@name,'friendsandfamily')]")).click();
-		System.out.println(driver.findElement(By.xpath("//input[contains(@name,'friendsandfamily')]")).isSelected());
+		Assert.assertTrue(driver.findElement(By.xpath("//input[contains(@name,'friendsandfamily')]")).isSelected());
+		//System.out.println(driver.findElement(By.xpath("//input[contains(@name,'friendsandfamily')]")).isSelected());
+		Thread.sleep(5000);
+		String actualText=driver.findElement(By.id("divpaxinfo")).getText();
+		
+		Assert.assertEquals(actualText, "1 Adult");
 	}
 
 }
