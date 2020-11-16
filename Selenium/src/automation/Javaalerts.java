@@ -27,4 +27,5 @@ public class Javaalerts {
 		driver.switchTo().alert().dismiss();
 	}
 
+	
 }
