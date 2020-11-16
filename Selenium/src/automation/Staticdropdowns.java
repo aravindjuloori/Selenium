@@ -2,31 +2,25 @@ package automation;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
-public class UpdatedDropdown {
+public class Staticdropdowns {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver","D:\\softwares\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		
 		driver.get("https://www.spicejet.com/");
 		driver.manage().window().maximize();
-		Thread.sleep(5000);
 		
-		driver.findElement(By.id("divpaxinfo")).click();
-	/*	int i=1;
-		while(i<5) {
-			
-			driver.findElement(By.id("divpaxinfo")).click();
-			i++;
-		}
-		*/
-		
-		for(int i=1;i<5;i++) {
-			driver.findElement(By.id("divpaxinfo")).click();
-		}
+		WebElement currency=driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
+		Select s=new Select(currency);
+		s.selectByIndex(1);
+		//s.selectByValue("AED");
+		//s.selectByVisibleText("USD");
 	}
 
 }
