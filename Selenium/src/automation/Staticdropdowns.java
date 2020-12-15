@@ -13,14 +13,21 @@ public class Staticdropdowns {
 		System.setProperty("webdriver.chrome.driver","D:\\softwares\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		
-		driver.get("https://www.spicejet.com/");
+		//driver.get("https://www.spicejet.com/");
+		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		driver.manage().window().maximize();
+		
+		//dropdown with select class
 		
 		WebElement currency=driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
 		Select s=new Select(currency);
-		s.selectByIndex(1);
-		//s.selectByValue("AED");
-		//s.selectByVisibleText("USD");
+		s.selectByIndex(3);
+		System.out.println(s.getFirstSelectedOption().getText());
+		s.selectByValue("AED");
+		System.out.println(s.getFirstSelectedOption().getText());
+		s.selectByVisibleText("USD");
+		System.out.println(s.getFirstSelectedOption().getText());
+		
 	}
 
 }
