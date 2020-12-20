@@ -29,7 +29,7 @@ public class Ecommerce {
 			
 			String[] name=products.get(i).getText().split("-");
 			String formattedName=name[0].trim();
-			List itemsNeededList=Arrays.asList(itemsNeeded);
+			List<String> itemsNeededList=Arrays.asList(itemsNeeded);
 			
 			if(itemsNeededList.contains(formattedName)) {
 				j++;

@@ -23,6 +23,7 @@ public class Salesforce {
 		Thread.sleep(3000);
 		System.out.println(driver.findElement(By.cssSelector("div#error.loginError")).getText());
 		driver.close();
+	
 		
 	}
 
