@@ -17,7 +17,7 @@ public class Staticdropdowns {
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		driver.manage().window().maximize();
 		
-		//dropdown with select class
+		//dropdown with select tag in selenium we have a class called select
 		
 		WebElement currency=driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
 		Select s=new Select(currency);
@@ -27,6 +27,7 @@ public class Staticdropdowns {
 		System.out.println(s.getFirstSelectedOption().getText());
 		s.selectByVisibleText("USD");
 		System.out.println(s.getFirstSelectedOption().getText());
+		driver.close();
 		
 	}
 

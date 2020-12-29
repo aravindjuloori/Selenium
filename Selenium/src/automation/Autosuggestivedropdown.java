@@ -28,6 +28,7 @@ public class Autosuggestivedropdown {
 				break;
 				}
 					}
+		driver.close();
 		
 	}
 

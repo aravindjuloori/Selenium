@@ -10,7 +10,6 @@ public class Dynamicdropdown {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "D:\\softwares\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
@@ -23,6 +22,7 @@ public class Dynamicdropdown {
 		// parent child relation xpath
 		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
 		driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click();
+		driver.close();
 	}
 
 }

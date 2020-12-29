@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.*;
-
+//testNg is one of the testing framework
 public class Checkboxes {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -19,8 +19,8 @@ public class Checkboxes {
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
 		
-		//To check the no. of checkboxes in the page.
-		List<WebElement> boxes=driver.findElements(By.xpath("//input[@type='checkbox']"));
+		//To check the no. of checkboxes in the page.	
+		List<WebElement> boxes=driver.findElements(By.cssSelector("input[type='checkbox']"));
 		System.out.println(boxes.size());
 		
 		//System.out.println(driver.findElement(By.xpath("//input[contains(@name,'friendsandfamily')]")).isSelected());
