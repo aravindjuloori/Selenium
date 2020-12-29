@@ -23,7 +23,7 @@ public class Actiondemo {
 		WebElement move=driver.findElement(By.cssSelector("a[id='nav-link-accountList']"));
 		
 		
-		//a.moveToElement(driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"))).click().keyDown(Keys.SHIFT).sendKeys("hello").build().perform();
+		a.moveToElement(driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"))).click().keyDown(Keys.SHIFT).sendKeys("hello").build().perform();
 		//a.moveToElement(driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"))).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().build().perform();
 		//Moves to specific element
 		//a.moveToElement(move).build().perform();
