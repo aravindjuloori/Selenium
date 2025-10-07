@@ -53,7 +53,7 @@ public class Locators {
         
         String loginErrordetails=driver.findElement(By.cssSelector("p[class='error']")).getText();    //By CSS selector
         
-        System.out.println("Login error details is : " +loginErrordetails);
+        System.out.println("Login error details is displayed here: " +loginErrordetails);
         
 		
 
