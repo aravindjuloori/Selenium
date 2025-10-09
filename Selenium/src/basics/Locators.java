@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 
 public class Locators {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		// Invoking the browser
 
@@ -53,6 +53,8 @@ String loginErrordetails=driver.findElement(By.cssSelector("p.error")).getText()
 		System.out.println("Login error details is displayed here: " + loginErrordetails);
 		
 		driver.findElement(By.linkText("Forgot your password?")).click();  //Link Text
+		
+		Thread.sleep(3000);
 
 		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("aravind");  //customized xpath
 		
@@ -62,13 +64,19 @@ String loginErrordetails=driver.findElement(By.cssSelector("p.error")).getText()
 		
 		driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("Bhanvni@gmail.com");  //css selector with index concept
 		
-		driver.findElement(By.xpath("//form/input[3]")).sendKeys("123232");   //xpath parent tagname/child tagname
+		driver.findElement(By.xpath("//form/input[3]")).sendKeys("123232");   //xpath parenttagname/child tagname
 		
 		driver.findElement(By.cssSelector(".reset-pwd-btn")).click();   //.classname 
 		
 		System.out.println(driver.findElement(By.cssSelector("form p")).getText());  //css parenttagname childtagname
 		
+		driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click(); //parent and child traverse
+		
+		
 		driver.findElement(By.id("inputUsername")).sendKeys("Aravind");
+		driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
+		driver.findElement(By.id("chkboxOne")).click();
+		driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
 		
 		//driver.quit();
 		
