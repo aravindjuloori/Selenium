@@ -3,6 +3,7 @@ package basics;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -49,8 +50,8 @@ public class StaticDropdown {
 				
 			}
 			
-			List<String> expectedValues = List.of("Select","INR", "AED", "USD");
-	        
+			//List<String> expectedValues = List.of("Select","INR", "AED", "USD");
+			List<String> expectedValues = Arrays.asList("Select","INR", "AED", "USD");
 	        
 	        if (actualValues.equals(expectedValues)) {
 	            System.out.println("✅ Dropdown values match expected list!");
