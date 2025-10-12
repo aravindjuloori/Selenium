@@ -34,6 +34,7 @@ public class UpdatedDropdown {
 		Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(),"5 Adult");
 		
 		
+		
 	}
 
 }
