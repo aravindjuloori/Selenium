@@ -24,11 +24,29 @@ public class Checkboxes {
 		driver.findElement(By.cssSelector("input[name*='SeniorCitizenDiscount']")).click();
 		Assert.assertTrue(driver.findElement(By.cssSelector("input[name*='SeniorCitizenDiscount']")).isSelected());
 		System.out.println(driver.findElement(By.cssSelector("input[name*='SeniorCitizenDiscount']")).isSelected());
+		//System.out.println(driver.findElement(By.id("ctl00_mainContent_txt_Todate")).isEnabled());
+		
+		driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
+				
+		  if(driver.findElement(By.id("Div1")).getDomAttribute("style").contains("1")){
+		  
+		  System.out.println("Its enabled");
+		  Assert.assertTrue(true);
+		  
+		  }
+		  else
+		  {
+			  Assert.assertTrue(false);
+		  }
+		 
+		
 		
 		//find no. of checkboxes in the page
 			List<WebElement> checkboxes=driver.findElements(By.xpath("//input[@type='checkbox']"));
 			System.out.println(checkboxes.size());
 			Assert.assertEquals(checkboxes.size(), 6);
+			
+			
 	}
 
 }
