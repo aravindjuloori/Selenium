@@ -1,4 +1,4 @@
-package basics;
+package rahul;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -41,6 +41,7 @@ public class Locators {
 
 		driver.findElement(By.className("signInBtn")).click(); /// By Class Name locator
 
+			
 		// CSS syntax
 		// 1.tagname.classname
 		// 2.tagName#id
@@ -62,7 +63,7 @@ String loginErrordetails=driver.findElement(By.cssSelector("p.error")).getText()
 		
 		driver.findElement(By.xpath("//input[@type='text'][2]")).clear();  //xpath with index concept
 		
-		driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("Bhanvni@gmail.com");  //css selector with index concept
+		driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("Bhavani@gmail.com");  //css selector with index concept
 		
 		driver.findElement(By.xpath("//form/input[3]")).sendKeys("123232");   //xpath parenttagname/child tagname
 		
