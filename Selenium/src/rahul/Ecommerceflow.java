@@ -1,4 +1,4 @@
-package basics;
+package rahul;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -19,7 +20,14 @@ public class Ecommerceflow {
 		// Expected list of vegetables to be added to cart
 		String[] itemsNeeded = {"Brocolli","Cucumber","Carrot","Beans"};
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
+		
+		// Initialize ChromeOptions to configure browser settings
+        ChromeOptions options = new ChromeOptions();
+
+        // Add the argument for incognito mode
+        options.addArguments("--incognito");
+        
+		WebDriver driver = new ChromeDriver(options);
 
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
