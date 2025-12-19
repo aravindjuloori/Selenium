@@ -1,4 +1,4 @@
-package pavan;
+package day26;
 
 import java.time.Duration;
 
@@ -11,7 +11,7 @@ import org.testng.Assert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ConditionalMethodsDay26 {
+public class ConditionalMethods {
 
 	public static void main(String[] args) {
 		ChromeOptions options=new ChromeOptions();

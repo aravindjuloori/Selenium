@@ -1,4 +1,4 @@
-package pavan;
+package day28;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class NavigationalCommandsDay28 {
+public class NavigationalCommands {
 
 	public static void main(String[] args) throws MalformedURLException {
 		
@@ -18,17 +18,18 @@ public class NavigationalCommandsDay28 {
 		
 		
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver=new ChromeDriver(options);
 		
 		
 		//driver.get("https://rahulshettyacademy.com/locatorspractice/");  // accepts url only in the string format
 		
 		//navigate().to() -- it will accept the url in the 1.String format 2.URL format
 		
-		//driver.navigate().to("https://rahulshettyacademy.com/locatorspractice/"); 
+		//driver.navigate().to("https://rahulshettyacademy.com/locatorspractice/"); 1.String format
 		
 		
-		URL myurl=new URL("https://rahulshettyacademy.com/locatorspractice/");
+		URL myurl=new URL("https://rahulshettyacademy.com/locatorspractice/");  //2.URL object format
+		
 		driver.navigate().to(myurl);
 		driver.manage().window().maximize();
 		

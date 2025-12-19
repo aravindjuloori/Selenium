@@ -1,4 +1,4 @@
-package pavan;
+package day26;
 
 import java.time.Duration;
 import java.util.Set;
@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class GetMethodsDay26 {
+public class GetMethods {
 
 	public static void main(String[] args) {
 		
@@ -43,7 +43,7 @@ public class GetMethodsDay26 {
 		//5.getWindowHandle()- it will return the ID of the browser
 		
 		String windowid=driver.getWindowHandle();
-		System.out.println("Window handle of single browser window" +windowid);
+		System.out.println("Window handle of single browser window " +windowid);
 		
 		
 		//6.getWindowHandles()- it will return the ID of the multiple browser
