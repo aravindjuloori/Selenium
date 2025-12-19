@@ -20,7 +20,6 @@ public class Locators {
 		driver.manage().window().maximize(); // it will maximize the browser
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // implicit wait to overcome sync issues
 		
-
 		driver.findElement(By.id("inputUsername")).sendKeys("Aravind"); // sending values to input box by using id															// locator
 		
 		driver.findElement(By.name("inputPassword")).sendKeys("hello123"); // using Name locator for the password box
@@ -47,9 +46,9 @@ public class Locators {
 		// 2.tagName#id
 		// 3.tagName[attribute='value']
 
-String loginErrordetails=driver.findElement(By.cssSelector("p.error")).getText();//By CSS selector
+		String loginErrordetails=driver.findElement(By.cssSelector("p.error")).getText();//By CSS selector  tagname.classname
 	
-//String loginErrordetails = driver.findElement(By.cssSelector("p[class='error']")).getText(); // By CSS selector
+		//String loginErrordetails = driver.findElement(By.cssSelector("p[class='error']")).getText(); // By CSS selector
 
 		System.out.println("Login error details is displayed here: " + loginErrordetails);
 		
@@ -59,7 +58,7 @@ String loginErrordetails=driver.findElement(By.cssSelector("p.error")).getText()
 
 		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("aravind");  //customized xpath
 		
-		driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("aravind.juloori@gmail.com");  //CSS selector
+		driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("aravind.juloori@gmail.com");  //CSS selector tagname[attribute='name']
 		
 		driver.findElement(By.xpath("//input[@type='text'][2]")).clear();  //xpath with index concept
 		
