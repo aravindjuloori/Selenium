@@ -17,7 +17,6 @@ public class CssSelector {
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("--incognito");
 		
-		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver(options);
 		
@@ -27,21 +26,21 @@ public class CssSelector {
 		
 		//tagName#id
 		
-		driver.findElement(By.cssSelector("input#small-searchterms")).sendKeys("T-shirts");
-		//driver.findElement(By.cssSelector("#small-searchterms")).sendKeys("T-shirts");
+	//	driver.findElement(By.cssSelector("input#small-searchterms")).sendKeys("T-shirts");
+//		driver.findElement(By.cssSelector("#small-searchterms")).sendKeys("T-shirts");
 		
 		//tagName.classname
 		
-		//driver.findElement(By.cssSelector("input.search-box-text.ui-autocomplete-input")).sendKeys("T-shirts");
+//		driver.findElement(By.cssSelector("input.search-box-text.ui-autocomplete-input")).sendKeys("T-shirts");
 		//driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("T-shirts");
 		//driver.findElement(By.cssSelector(".search-box-text")).sendKeys("T-shirts");
 		
 		//Tagname and attribute
 		
-		//driver.findElement(By.cssSelector("input[placeholder='Search store']")).sendKeys("T-shirts");
+//		driver.findElement(By.cssSelector("input[placeholder='Search store']")).sendKeys("T-shirts");
 		
 		//TagName class and attribute
-		//driver.findElement(By.cssSelector("input.search-box-text[name='q']")).sendKeys("T-shirts");
+		driver.findElement(By.cssSelector("input.search-box-text[name='q']")).sendKeys("T-shirts");
 		
 		//By using regular expression
 		//driver.findElement(By.cssSelector("input[placeholder*='Search']")).sendKeys("T-shirts");

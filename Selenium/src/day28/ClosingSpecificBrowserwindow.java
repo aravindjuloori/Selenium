@@ -37,7 +37,7 @@ public class ClosingSpecificBrowserwindow {
 			String title=driver.switchTo().window(winId).getTitle();
 			System.out.println(title);
 			
-			if(title.equals("Rahul Shetty Academy | Master AI & Automation Testing")) {
+			if(title.equals("Rahul Shetty Academy | QA Automation, Playwright, AI Testing & Online Training")) {
 				driver.close();
 			}
 			
