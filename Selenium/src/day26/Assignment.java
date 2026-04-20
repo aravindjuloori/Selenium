@@ -44,6 +44,10 @@ public class Assignment {
 			Set<String> windowids=driver.getWindowHandles();
 			System.out.println(windowids);
 			
+			for(String value:windowids) {
+				System.out.println(value);
+			}
+			
 			
 			//driver.close();
 			driver.quit();

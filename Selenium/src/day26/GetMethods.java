@@ -14,16 +14,20 @@ public class GetMethods {
 
 	public static void main(String[] args) {
 		
+		//This tutorial contains GetMethods and Browser methods
+		
+		
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("--incognito");
 		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		
+		//Get Methods
 		//1.get(url)-- open the url on the browser
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 	
 		//2.getTitle()- returns the title of the page
@@ -59,8 +63,11 @@ public class GetMethods {
 			  
 		  }
 		  
-		  //driver.close();
-		  driver.quit();
+		  
+		  //Browser Methods
+		  
+		 //driver.close();
+	  driver.quit();
 		 
 		
 	}
