@@ -9,16 +9,24 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">115,722</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">18,554</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">day42.FirstTestCase</td><td><a href="#m0">login</a></td><td rowspan="1">1777310544747</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m1">logout</a></td><td rowspan="1">1777310544755</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m2">openapp</a></td><td rowspan="1">1777310544737</td><td rowspan="1">4</td></tr><tr class="passedodd"><td rowspan="4">day42.OrangeHRMTest</td><td><a href="#m3">closeApp</a></td><td rowspan="1">1777310544272</td><td rowspan="1">461</td></tr><tr class="passedodd"><td><a href="#m4">login</a></td><td rowspan="1">1777310522264</td><td rowspan="1">22003</td></tr><tr class="passedodd"><td><a href="#m5">openapp</a></td><td rowspan="1">1777310429078</td><td rowspan="1">89074</td></tr><tr class="passedodd"><td><a href="#m6">testLogo</a></td><td rowspan="1">1777310518169</td><td rowspan="1">4088</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">day46.DependencyMethods</td><td><a href="#m0">search</a></td><td rowspan="1">1777385295049</td><td rowspan="1">25</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">day46.DependencyMethods</td><td><a href="#m1">advSearch</a></td><td rowspan="1">1777385295085</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">day46.DependencyMethods</td><td><a href="#m2">login</a></td><td rowspan="1">1777385295036</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m3">logout</a></td><td rowspan="1">1777385295095</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m4">openapp</a></td><td rowspan="1">1777385295020</td><td rowspan="1">5</td></tr><tr class="passedodd"><td rowspan="3">day46.OrangeHRMTest</td><td><a href="#m5">testTitle</a></td><td rowspan="1">1777385294455</td><td rowspan="1">40</td></tr><tr class="passedodd"><td><a href="#m6">testUrl</a></td><td rowspan="1">1777385294499</td><td rowspan="1">26</td></tr><tr class="passedodd"><td><a href="#m7">testlogo</a></td><td rowspan="1">1777385294295</td><td rowspan="1">130</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">day42.FirstTestCase#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">day42.FirstTestCase#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">day42.FirstTestCase#openapp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">day42.OrangeHRMTest#closeApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">day42.OrangeHRMTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">day42.OrangeHRMTest#openapp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">day42.OrangeHRMTest#testLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">day46.DependencyMethods#search</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at day46.DependencyMethods.search(DependencyMethods.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">day46.DependencyMethods#advSearch</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method day46.DependencyMethods.advSearch() on instance day46.DependencyMethods@62ddbd7e depends on not successfully finished methods 
+[day46.DependencyMethods.search() on instance day46.DependencyMethods@62ddbd7e
+day46.DependencyMethods.login() on instance day46.DependencyMethods@62ddbd7e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">day46.DependencyMethods#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">day46.DependencyMethods#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">day46.DependencyMethods#openapp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">day46.OrangeHRMTest#testTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">day46.OrangeHRMTest#testUrl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">day46.OrangeHRMTest#testlogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
