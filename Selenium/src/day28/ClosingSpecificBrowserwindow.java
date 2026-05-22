@@ -23,8 +23,6 @@ public class ClosingSpecificBrowserwindow {
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		
-		
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		driver.manage().window().maximize();
 		
@@ -40,7 +38,7 @@ public class ClosingSpecificBrowserwindow {
 			if(title.equals("Rahul Shetty Academy | QA Automation, Playwright, AI Testing & Online Training")) {
 				driver.close();
 			}
-			
+			 
 		}
 	}
 

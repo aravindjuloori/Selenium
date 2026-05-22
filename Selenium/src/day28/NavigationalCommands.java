@@ -43,6 +43,7 @@ public class NavigationalCommands {
 		
 		
 		driver.navigate().refresh();
+		
 
 	}
 

@@ -53,7 +53,7 @@ public class Assignment {
 			if(title.equals("Selenium in biology - Wikipedia")||title.equals("Selenium (software) - Wikipedia")) {
 				driver.close();
 			}
-		}
+		} 
 		
 
 	}

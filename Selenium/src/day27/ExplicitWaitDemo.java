@@ -26,6 +26,7 @@ public class ExplicitWaitDemo {
 	
 		WebDriverWait mywait=new WebDriverWait(driver,Duration.ofSeconds(10));   //Declaration
 		
+		
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		driver.manage().window().maximize();
 		
