@@ -13,6 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class FramesDemo {
 
 	public static void main(String[] args) {
+	
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("--incognito");
 		
@@ -46,8 +47,10 @@ public class FramesDemo {
 		
 		
 		//inner iframe part of frame3
-		driver.switchTo().frame(0);   //switching to frame using index
+		driver.switchTo().frame(0);   //switching to inner frame using index
 //		driver.findElement(By.xpath(""))
+		
+		
 		
 	}
 

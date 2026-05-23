@@ -17,7 +17,7 @@ public class AuthenticationAlert {
 		WebDriver driver=new ChromeDriver(options);
 		
 		driver.get("http://admin:admin@the-internet.herokuapp.com/basic_auth");
-//https://the-internet.herokuapp.com/basic_auth
+		//https://the-internet.herokuapp.com/basic_auth
 		driver.manage().window().maximize();
 		
 

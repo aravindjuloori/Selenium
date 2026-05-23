@@ -31,6 +31,7 @@ public class DragDropDemo {
 		
 		String droptext=driver.findElement(By.xpath("div[id='droppable'] p")).getText();
 		Assert.assertEquals(droptext, "Dropped!");
+		
 	}
 	
 

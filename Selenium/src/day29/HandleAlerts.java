@@ -27,13 +27,14 @@ public class HandleAlerts {
 		
 		
 		//1.simple alert with OK button
-		/*
-		 * driver.findElement(By.xpath("//button[@id='alertBtn']")).click();
-		 * Thread.sleep(1000);
-		 * 
-		 * Alert myAlert=driver.switchTo().alert();
-		 * System.out.println(myAlert.getText()); myAlert.accept();
-		 */
+		
+		  driver.findElement(By.xpath("//button[@id='alertBtn']")).click();
+		  Thread.sleep(1000);
+		  
+		  Alert myAlert=driver.switchTo().alert();
+		  System.out.println(myAlert.getText());
+		  myAlert.accept();
+		 
 		
 		//2.Confirmation alert with OK and Cancle button
 		/*
@@ -49,17 +50,17 @@ public class HandleAlerts {
 		//3.Prompt alert 
 		
 		
-		  driver.findElement(By.xpath("//button[@id='promptBtn']")).click();
-		  Thread.sleep(5000);
-		  Alert myalert=driver.switchTo().alert();
-		  String name="Aravind";
-		  myalert.sendKeys(name); 
-		  Thread.sleep(5000);
-		  myalert.accept();
-		  String successmessage=driver.findElement(By.xpath("//*[@id='demo']")).getText();
-		  
-		  Assert.assertEquals(successmessage, "Hello " +name+ "! How are you today?");
-		
+		/*
+		 * driver.findElement(By.xpath("//button[@id='promptBtn']")).click();
+		 * Thread.sleep(5000); 
+		 * Alert myalert=driver.switchTo().alert(); 
+		 * String name="Aravind";
+		 *  myalert.sendKeys(name); 
+		 *  Thread.sleep(5000); 
+		 * myalert.accept();
+		 * String successmessage=driver.findElement(By.xpath("//*[@id='demo']")).getText();
+		 * Assert.assertEquals(successmessage, "Hello " +name+ "! How are you today?");
+		 */
 	}
 
 }

@@ -44,7 +44,7 @@ public class DoubleClickAction {
 		  Actions act=new Actions(driver); 
 		  act.doubleClick(button).build().perform();
 		 
-		//validation :Box2 should contain WELcome
+		//validation :Box2 should contain Welcome
 		String text=box2.getAttribute("value");
 		System.out.println(text);
 		if(text.contains("WELCOME")) {

@@ -26,10 +26,10 @@ public class HandleAlertUsingExplicitWait {
 		driver.manage().window().maximize();
 		
 		WebDriverWait mywait=new WebDriverWait(driver,Duration.ofSeconds(10));
-
 		
 		driver.findElement(By.xpath("//button[@id='alertBtn']")).click();
 		Thread.sleep(2000);
+		
 		
 		Alert myAlert=mywait.until(ExpectedConditions.alertIsPresent());
 		

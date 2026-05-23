@@ -36,22 +36,23 @@ public class HandleCheckboxes {
 			System.out.println(checkboxes.size());
 			
 			/*
-			 * for(int i=0;i<checkboxes.size();i++) { 
-			 * checkboxes.get(i).click(); 
-			 * }
+			 * for(int i=0;i<checkboxes.size();i++) { checkboxes.get(i).click(); }
 			 */
 			
-			/*for(WebElement checkbox:checkboxes) {
-				checkbox.click();
-			}*/
+			/*
+			 * for(WebElement checkbox:checkboxes) { 
+			 * checkbox.click(); 
+			 * }
+			 */
 			
 		//3.Select last 3 checkboxes
 		//total no. of checkboxes- how many checkboxes want to select=starting index
 		/*
 		 * for(int i=4;i<checkboxes.size();i++) { 
-		 * checkboxes.get(i).click(); 
-		 * }
+		 * checkboxes.get(i).click();
+		 *  }
 		 */
+		 
 			
 			
 		//4.first 3 checkboxes
@@ -63,9 +64,10 @@ public class HandleCheckboxes {
 		
 		//5.unselect the selected checkboxes
 		
+		
 		  for(int i=0;i<3;i++) { 
-		  checkboxes.get(i).click();
-		   }
+		  checkboxes.get(i).click(); 
+		  }
 		  
 		  for(int i=0;i<checkboxes.size();i++) { 
 		  if(checkboxes.get(i).isSelected()) {
@@ -73,6 +75,7 @@ public class HandleCheckboxes {
 		   }
 		  
 		  }
+		 
 		 
 	}
 

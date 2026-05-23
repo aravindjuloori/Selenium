@@ -43,7 +43,7 @@ public class Assignment {
 		
 		//Approach 1  convert set list to List
 		
-		List<String> windowList=new ArrayList<>(windowIds);
+	List<String> windowList=new ArrayList<>(windowIds);
 		System.out.println(windowList);
 		
 		for(String winId:windowList) {
