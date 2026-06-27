@@ -5,6 +5,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /*
+ * 
+ * @BeforeMethod
+ * @After Method
+ * 
+ * Scenario 
  * 1.Login to application
  * 2.Perform search
  * 3.Logout from application
@@ -12,11 +17,6 @@ import org.testng.annotations.Test;
  * 4.Login to application
  * 5.Perform advanced search
  * 6.Logout from application
- * 
- * @BeforeMethod
- * @After Method
- * 
- * 
  * 
  * 
  */

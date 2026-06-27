@@ -9,7 +9,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /*
- * 
  * 1.open the application
  * 2.test logo presence
  * 3.Login
@@ -19,15 +18,15 @@ import org.testng.annotations.Test;
 public class OrangeHRMTest {
 	
 	WebDriver driver;
+	
 	@Test(priority=1)
-	public void openapp() {
-		
+	public void openApp() {
 		 driver=new ChromeDriver();
 		 driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		 driver.manage().window().maximize();
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		 
 	}
+	
 	
 	@Test(priority=2)
 	public void testLogo() throws InterruptedException {
