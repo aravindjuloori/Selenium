@@ -5,8 +5,8 @@
 	<test name="groupingtests">
 	<groups>
 		<run>
-			<!--<exclude name="sanity"/>-->
-			<include name="functional"/>
+		<!--	<exclude name="sanity"/>-->
+			<exclude name="functional"/>
 		</run>
 	</groups>
 	
