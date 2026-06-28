@@ -26,6 +26,6 @@ public class HardAssertions {
 //		Assert.assertFalse(1==2); //passed
 //		Assert.assertFalse(1==1);//failed
 		
-//		Assert.fail();
+		Assert.fail();
 	}
 }

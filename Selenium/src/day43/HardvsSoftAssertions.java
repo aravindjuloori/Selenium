@@ -9,12 +9,14 @@ public class HardvsSoftAssertions {
 	
 	
 	/*
-	 * @Test void test_hardAssertions() { System.out.println("testing....");
+	 * @Test void test_hardAssertions() { 
+	 * System.out.println("testing....");
 	 * System.out.println("Testing...");
 	 * 
 	 * Assert.assertEquals(1, 2);
 	 * 
-	 * System.out.println("testing "); System.out.println("Test");
+	 * System.out.println("testing "); 
+	 * System.out.println("Test");
 	 * 
 	 * }
 	 */
