@@ -29,10 +29,8 @@ public class DragDropDemo {
 		Actions act=new Actions(driver);
 		act.dragAndDrop(source, trash).build().perform();
 		
-		String droptext=driver.findElement(By.xpath("div[id='droppable'] p")).getText();
+		String droptext=driver.findElement(By.cssSelector("div[id='droppable'] p")).getText();
 		Assert.assertEquals(droptext, "Dropped!");
 		
 	}
-	
-
 }

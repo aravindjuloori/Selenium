@@ -15,8 +15,6 @@ public class TabsAndWindows {
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("--incognito");
 		
-		
-	
 		WebDriver driver=new ChromeDriver(options);
 		
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");

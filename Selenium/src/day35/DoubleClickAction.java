@@ -54,5 +54,5 @@ public class DoubleClickAction {
 			System.out.println("Text not copied properly");
 		}
 	}
-
+	
 }

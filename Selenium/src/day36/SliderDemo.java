@@ -41,8 +41,8 @@ public class SliderDemo {
 		WebElement maxSlider=driver.findElement(By.xpath("//span[2]"));
 		
 		System.out.println("Default Location of the maxSlider: "+maxSlider.getLocation());
-		act.dragAndDropBy(maxSlider,-100, 47).perform();
-		System.out.println(" Location of the maxSlider after moving: "+maxSlider.getLocation());
+//		act.dragAndDropBy(maxSlider,-100, 246).perform();
+//		System.out.println(" Location of the maxSlider after moving: "+maxSlider.getLocation());
 	}
 
 }

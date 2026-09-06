@@ -32,6 +32,7 @@ public class MouseHoverAction {
 			Actions act=new Actions(driver);
 //			act.moveToElement(signin).moveToElement(signinBtn).click().build().perform();
 			
+			//MouseHover action
 			act.moveToElement(signin).moveToElement(signinBtn).click().perform();
 	}
 

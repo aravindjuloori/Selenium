@@ -35,7 +35,6 @@ public class RightClickAction {
 		driver.findElement(By.xpath("//span[normalize-space()='Copy']")).click();
 
 		// close the alert box
-
 		Alert myalert = driver.switchTo().alert();
 		System.out.println(myalert.getText());
 		myalert.accept();
