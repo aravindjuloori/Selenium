@@ -14,23 +14,22 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Assignment {
 
 	public static void main(String[] args) {
-		
-		ChromeOptions options=new ChromeOptions();
+
+		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--incognito");
-		
+
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver(options);
-		
+		WebDriver driver = new ChromeDriver(options);
+
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-		
-		//Select the checkboxes in the Pagination Web Table 
-		List<WebElement> chkbox=driver.findElements(By.xpath("//table[@id='productTable']//input[@type='checkbox']"));
+
+		// Select the checkboxes in the Pagination Web Table
+		List<WebElement> chkbox = driver.findElements(By.xpath("//table[@id='productTable']//input[@type='checkbox']"));
 		System.out.println(chkbox.size());
-		
-		for(int i=0;i<chkbox.size();i++) {
+
+		for (int i = 0; i < chkbox.size(); i++) {
 			chkbox.get(i).click();
 		}
 	}
