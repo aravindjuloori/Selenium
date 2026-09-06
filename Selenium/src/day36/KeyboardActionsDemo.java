@@ -27,24 +27,21 @@ public class KeyboardActionsDemo {
 		
 		driver.findElement(By.xpath("//textarea[@id='inputText1']")).sendKeys("Welcome");
 		
+	
 		Actions act=new Actions(driver);
 		
-		//Crtl+A
-		
+		//Ctrl+A
 		act.keyDown(Keys.CONTROL).sendKeys("A").keyUp(Keys.CONTROL).build().perform();
 		
-		//Ctrl +C
+		//Ctrl+C
 		act.keyDown(Keys.CONTROL).sendKeys("C").keyUp(Keys.CONTROL).build().perform();
 		
 		//Tab
 		act.keyDown(Keys.TAB).keyUp(Keys.TAB).build().perform();
 		
-		//Ctrl+V
+		//Ctrl+V	
 		act.keyDown(Keys.CONTROL).sendKeys("V").keyUp(Keys.CONTROL).build().perform();
 		
-		
-		
-
 	}
 
 }

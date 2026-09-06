@@ -30,8 +30,6 @@ public class ActionsVsAction {
 		Actions act=new Actions(driver);
 		Action myaction=act.contextClick(rightclk).build(); //Building or Creating an action and storing it in a variable.
 		myaction.perform(); //performing or completing an action
-		
-		
 	}
 
 }

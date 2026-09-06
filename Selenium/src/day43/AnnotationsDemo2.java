@@ -5,14 +5,16 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 /*
+ * @BeforeClass
+ * @AfterClass
  * 
+ * Scenario 
  * 1.Login to application
  * 2.Perform the search
  * 3.Perform the advanced search
  * 4.Logout from application
  * 
- * @BeforeClass
- * @AfterClass
+ * 
  */
 
 public class AnnotationsDemo2 {

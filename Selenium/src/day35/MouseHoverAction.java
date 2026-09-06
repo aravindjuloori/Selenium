@@ -18,21 +18,22 @@ public class MouseHoverAction {
 			ChromeOptions options=new ChromeOptions();
 			options.addArguments("--incognito");
 			
+			
 			WebDriverManager.chromedriver().setup();
 			WebDriver driver=new ChromeDriver(options);
 			
 			driver.get("https://www.amazon.in/");
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			
 			WebElement signin=driver.findElement(By.xpath("//div[@id='nav-link-accountList']"));
-			WebElement signinBtn=driver.findElement(By.xpath("//*[@id=\"nav-flyout-ya-signin\"]/a/span"));
+			WebElement signinBtn=driver.findElement(By.xpath("//div[@id='nav-flyout-ya-signin']/a/span"));
+			
 			Actions act=new Actions(driver);
 //			act.moveToElement(signin).moveToElement(signinBtn).click().build().perform();
 			
+			//MouseHover action
 			act.moveToElement(signin).moveToElement(signinBtn).click().perform();
-		
-
 	}
 
 }

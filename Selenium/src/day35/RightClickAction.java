@@ -15,35 +15,30 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class RightClickAction {
 
 	public static void main(String[] args) {
-		ChromeOptions options=new ChromeOptions();
+		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--incognito");
-		
+
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver(options);
-		
+		WebDriver driver = new ChromeDriver(options);
+
 		driver.get("https://swisnl.github.io/jQuery-contextMenu/demo.html");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		
-		
-		WebElement rightclk=driver.findElement(By.cssSelector(".context-menu-one.btn.btn-neutral"));
-		
-		Actions act=new Actions(driver);
-		
-		//Right click 
+
+		WebElement rightclk = driver.findElement(By.cssSelector(".context-menu-one.btn.btn-neutral"));
+
+		Actions act = new Actions(driver);
+		// Right click
 		act.contextClick(rightclk).build().perform();
-		
-		//click on the copy
+
+		// click on the copy
 		driver.findElement(By.xpath("//span[normalize-space()='Copy']")).click();
-		
-		//close the alert box
-		
-		Alert myalert=driver.switchTo().alert();
+
+		// close the alert box
+		Alert myalert = driver.switchTo().alert();
 		System.out.println(myalert.getText());
 		myalert.accept();
-		
 
-		
 	}
 
 }

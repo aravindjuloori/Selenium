@@ -9,10 +9,10 @@ public class C2 {
 	public void xyz() {
 		System.out.println("This is xyz from C2 ");
 	}
-	
+
 	@AfterTest
 	public void at() {
-		System.out.println("This is after test method");
+		System.out.println("This is AfterTest method");
 	}
-	
+
 }

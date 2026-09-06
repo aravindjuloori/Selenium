@@ -36,6 +36,7 @@ public class OpenLinkAnotherTab {
 		
 		Set<String> winids=driver.getWindowHandles();
 		
+		//converting to list as set will not support the index concept
 		List<String> win=new ArrayList<>(winids);
 		driver.switchTo().window(win.get(1));
 		System.out.println(driver.getTitle());

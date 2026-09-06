@@ -21,11 +21,15 @@ public class ImplicitWaitDemo {
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		
+				
 		//This is applicable for throughout the driver instance
 		
-		//adv: 1.Easy to use 2. This is applicable for all the elements 3.Single statement 4.It will not wait the max time 
-		
+		//adv: 
+		/*1.Easy to use 
+		 2. This is applicable for all the elements 
+		 3.Single statement 
+		 4.It will not wait the max time 
+		*/
 
 		driver.findElement(By.id("name")).sendKeys("Aravind");
 

@@ -20,14 +20,14 @@ public class ConditionalMethods {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		
-		//1.get(url)-- open the url on the browser
-		//driver.get("https://rahulshettyacademy.com/locatorspractice/");
+		
 		driver.get("https://demo.nopcommerce.com/register");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		
+			
 		//isDisplayed()-any webelement is displayed on the web page or not
+		
 		
 		/*
 		 * WebElement signinButton=driver.findElement(By.
@@ -35,23 +35,28 @@ public class ConditionalMethods {
 		 * System.out.println(signinButton.isDisplayed());
 		 */
 		 
+		 
 		
 	//	boolean signinbutton=driver.findElement(By.xpath("//button[@class='submit signInBtn']")).isDisplayed();
 		//System.out.println(signinbutton);
 		
 		
+	
 	/*
 	 * WebElement
 	 * logo=driver.findElement(By.xpath("//img[@alt='nopCommerce demo store']"));
 	 * System.out.println("Display status of logo : "+logo.isDisplayed());
 	 */
+	 
 		 
 			
+	
 	/*
 	 * boolean
 	 * status=driver.findElement(By.xpath("//img[@alt='nopCommerce demo store']")).
 	 * isDisplayed(); System.out.println("Display the status of logo: "+status);
 	 */
+	 
 		
 		
 		

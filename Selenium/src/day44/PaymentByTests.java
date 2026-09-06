@@ -4,13 +4,12 @@ import org.testng.annotations.Test;
 
 public class PaymentByTests {
 
-	
-	@Test(priority=1,groups= {"sanity","regression","functional"})
+	@Test(priority = 1, groups = { "sanity", "regression", "functional" })
 	public void paymentinRupees() {
 		System.out.println("Payment in rupees");
 	}
-	
-	@Test(priority=2,groups= {"sanity","regression","functional"})
+
+	@Test(priority = 2, groups = { "sanity", "regression", "functional" })
 	public void paymentinDollars() {
 		System.out.println("Payment in dollars");
 	}

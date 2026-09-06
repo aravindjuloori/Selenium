@@ -15,24 +15,22 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class HandleAlertUsingExplicitWait {
 
 	public static void main(String[] args) throws InterruptedException {
-		ChromeOptions options=new ChromeOptions();
+		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--incognito");
-		
-		
+
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver(options);
-		
+		WebDriver driver = new ChromeDriver(options);
+
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
-		
-		WebDriverWait mywait=new WebDriverWait(driver,Duration.ofSeconds(10));
 
-		
+		WebDriverWait mywait = new WebDriverWait(driver, Duration.ofSeconds(10));  //Declaration of explicitwait
+
 		driver.findElement(By.xpath("//button[@id='alertBtn']")).click();
 		Thread.sleep(2000);
-		
-		Alert myAlert=mywait.until(ExpectedConditions.alertIsPresent());
-		
+
+		Alert myAlert = mywait.until(ExpectedConditions.alertIsPresent());
+
 		System.out.println(myAlert.getText());
 		myAlert.accept();
 
